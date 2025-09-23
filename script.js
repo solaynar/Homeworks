@@ -134,3 +134,18 @@ console.log(something4(16));*/
 console.log(threenumbers(4,5,6));
 console.log(threenumbers(5,7,9));*/
 
+
+
+function reverseNumber(num){
+    let reversed=0;
+    while(num>0){
+        let digit=num%10;
+        reversed=reversed*10+digit;
+
+        num=(num-digit)/10;
+    }
+    return reversed;
+} 
+
+let result = reverseNumber(123);
+console.log(result); 
